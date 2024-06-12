@@ -8,7 +8,7 @@
 #### [Yuhao Li](), [Muzammal Naseer](https://muzammal-naseer.com/), [Jiale Cao](https://jialecao001.github.io/), [Yu Zhu](), [Jinqiu Sun](https://teacher.nwpu.edu.cn/m/2009010133), [Yanning Zhang](https://jszy.nwpu.edu.cn/1999000059) and [Fahad Khan](https://sites.google.com/view/fahadkhans/home)
 
 
-#### **Northwestern Polytechnical University， Mohamed bin Zayed University of AI, TianJin University, Linköping University**
+#### **Northwestern Polytechnical University， Mohamed bin Zayed University of AI,  TianJin University,  Linköping University**
 
 <!-- [![Website](https://img.shields.io/badge/Project-Website-87CEEB)](site_url) -->
 [![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2406.04844.pdf)
@@ -31,7 +31,12 @@ the training sets and validation sets of commonly used MOT datasets including
 [MOT17](https://motchallenge.net/data/MOT17/), [DanceTrack](https://dancetrack.github.io/) and [SportsMOT](https://github.com/MCG-NJU/SportsMOT?tab=readme-ov-file) with language descriptions
 at both scene and instance levels.
 
-<img src="source/dataset-L.png" width="80%"/>
+| Dataset|Videos (Scenes) |Annotated Scenes |Tracks (Instances) | Annotated Instances|Annotated Boxes |Frames|
+|---------|---------|---------|---------|---------|---------|---------|
+| MOT17-L |  7 | 7 | 796 |796 | 614,103 | 110,407 |
+| DanceTrack-L| 65   | 65| 682 | 682 | 576,078 | 67,304|
+|SportsMOT-L |90| 90 | 1,280 | 1,280 |608,152|55,544 |
+|Total | 162|162|2,758|2,758|1798,333|233,255|
 
 - **LG-MOT** is a new multi-object tracking framework which leverages language information at different granularity during training to enhance object association capabilities. During training, our **ISG** module aligns each node embedding $\phi(b_i^k)$ with instance-level descriptions embeddings $\varphi_i$, while our **SPG** module aligns edge embeddings $\hat{E}_{(u,v)}$ with scene-level descriptions embeddings $\varphi_s$ to guide correlation estimation after message passing. Our approach does not require language description during inference.
 
@@ -61,4 +66,4 @@ if you use our work, please consider citing us:
 
 
 ## License
-This project is released under the BSD-3-Clause license. See [LICENSE](LICENSE) for additional details.
+This project is released under the MIT license. See [LICENSE](LICENSE) for additional details.
