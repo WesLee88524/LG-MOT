@@ -39,7 +39,11 @@ at both scene and instance levels.
 
 - **LG-MOT**  increases 1.2% in terms of IDF1 over the baseline SUSHI intra-domain, while significantly improves 11.2% in cross-domain.
 
-<img src="source/performance.png" width="80%"/>
+<img src="source/performance.png" width="50%"/>
+
+## Visualization
+
+<img src="source/visualization.png" width="80%"/>
 
 ## Citation
 if you use our work, please consider citing us:
