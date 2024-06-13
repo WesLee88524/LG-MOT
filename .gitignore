@@ -12,6 +12,7 @@ wandb
 **.pth
 **.png
 **.jpg
+**.sh
 **.sbatch.**
 **/**.pyc
 **/__pycache/
