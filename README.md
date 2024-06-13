@@ -51,6 +51,92 @@ at both scene and instance levels.
 
 <img src="source/visualization.png" width="80%"/>
 
+
+## Setup
+
+1. Clone and enter this repository
+    ```
+    git clone https://github.com/WesLee88524/LG-MOT.git
+    cd LG-MOT
+    ```
+
+3. Create an [Anaconda environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) for this project:
+    ```
+    conda env create -f environment.yml
+    conda activate LG-MOT
+    ```
+
+3. Clone [fast-reid](https://github.com/JDAI-CV/fast-reid) (latest version should be compatible but we use [this](https://github.com/JDAI-CV/fast-reid/tree/afe432b8c0ecd309db7921b7292b2c69813d0991) version) and install its dependencies. The `fast-reid` repo should be inside `LG-MOT` root:
+    ```
+    LG-MOT
+    ├── src
+    ├── fast-reid
+    └── ...
+    ```
+
+4. Download [re-identification model we use from fast-reid](https://drive.google.com/file/d/1MovixfOLwnnXet05JLIGPy-Ag67fdW-2/view?usp=share_link) and move it inside `LG-MOT/fastreid-models/model_weights/`
+
+5. Download [MOT17](https://motchallenge.net/data/MOT17/), [MOT20](https://motchallenge.net/data/MOT20/) and [DanceTrack](https://dancetrack.github.io/) datasets. In addition, prepare seqmaps to run evaluation (for details see [TrackEval](https://github.com/JonathonLuiten/TrackEval)). We provide an [example seqmap](https://drive.google.com/drive/folders/1LYRYPuNWIWWz-HXSjuqyX8Fz9fDunTRI?usp=sharing). Overall, the expected folder structure is: 
+
+    ```
+    DATA_PATH
+    ├── DANCETRACK
+    │   └── ...
+    ├── SPORTSMOT
+    │   └── ...
+    └── MOT17
+        └── seqmaps
+        │    ├── seqmap_file_name_matching_split_name.txt
+        │    └── ...
+        └── train
+        │    ├── MOT17-02
+        │    │   ├── det
+        │    │   │   └── det.txt
+        │    │   └── gt
+        │    │   │   └── gt.txt
+        │    │   └── img1 
+        │    │   │   └── ...
+        │    │   └── seqinfo.ini
+        │    └── ...
+        └── test
+             └── ...
+
+    ```
+
+
+
+<!-- 6. (OPTIONAL) Download [our detections](https://drive.google.com/drive/folders/1bxw1Hz77LCCW3cWizhg_q03vk4aXUriz?usp=share_link) and [pretrained models](https://drive.google.com/drive/folders/1cU7LeTAeKxS-nvxqrUdUstNpR-Wpp5NV?usp=share_link) and arrange them according to the expected file structure (See step 5). -->
+
+
+## Training
+You can launch a training from the command line. An example command for MOT17 training:
+
+```
+RUN=example_mot17_training
+REID_ARCH='fastreid_msmt_BOT_R50_ibn'
+
+DATA_PATH=YOUR_DATA_PATH
+
+python scripts/main.py --experiment_mode train --cuda --train_splits MOT17-train-all --val_splits MOT17-train-all --run_id ${RUN}_${REID_ARCH} --interpolate_motion --linear_center_only --det_file byte065 --data_path ${DATA_PATH} --reid_embeddings_dir reid_${REID_ARCH} --node_embeddings_dir node_${REID_ARCH}  --zero_nodes --reid_arch $REID_ARCH --edge_level_embed --save_cp --inst_KL_loss 1 --KL_loss 1 --num_epoch 200 --mpn_use_prompt_edge 1 1 1 1 --use_instance_prompt 
+```
+
+
+## Testing
+You can test a trained model from the command line. An example for testing on MOT17 training set:
+```
+RUN=example_mot17_test
+REID_ARCH='fastreid_msmt_BOT_R50_ibn'
+
+DATA_PATH=your_data_path
+PRETRAINED_MODEL_PATH=your_pretrained_model_path
+
+python scripts/main.py --experiment_mode test --cuda --test_splits MOT17-test-all --run_id ${RUN}_${REID_ARCH} --interpolate_motion --linear_center_only --det_file byte065 --data_path ${DATA_PATH} --reid_embeddings_dir reid_${REID_ARCH} --node_embeddings_dir node_${REID_ARCH}  --zero_nodes --reid_arch $REID_ARCH --edge_level_embed --save_cp --hicl_model_path ${PRETRAINED_MODEL_PATH}  --inst_KL_loss 0 --KL_loss 0 
+
+```
+
+
+
+
 ## Citation
 if you use our work, please consider citing us:
 ```BibTeX
