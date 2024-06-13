@@ -43,16 +43,21 @@ at both scene and instance levels.
 
 - **LG-MOT** is a new multi-object tracking framework which leverages language information at different granularity during training to enhance object association capabilities. During training, our **ISG** module aligns each node embedding $\phi(b_i^k)$ with instance-level descriptions embeddings $\varphi_i$, while our **SPG** module aligns edge embeddings $\hat{E}_{(u,v)}$ with scene-level descriptions embeddings $\varphi_s$ to guide correlation estimation after message passing. Our approach does not require language description during inference.
 
-<img src="source/LG-MOT_overview.png" width="80%"/>
+<div align=center>
+	<img src="source/LG-MOT_overview.png" width="90%"/>
+</div>
 
 - **LG-MOT**  increases 1.2% in terms of IDF1 over the baseline SUSHI intra-domain, while significantly improves 11.2% in cross-domain.
 
-<img src="source/performance.png" width="50%"/>
+<div align=center>
+	<img src="source/performance.png" width="50%"/>
+</div>
+<!-- <img src="source/performance.png" width="50%"/> -->
 
 ## Visualization
-
-<img src="source/visualization.png" width="80%"/>
-
+<div align=center>
+<img src="source/visualization.png" width="90%"/>
+</div>
 
 ## Setup
 
