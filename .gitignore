@@ -2,8 +2,6 @@
 /output/
 other_files
 wandb
-data
-models
 .vscode/
 **.zip
 **.tar.gz
