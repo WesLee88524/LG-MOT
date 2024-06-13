@@ -32,8 +32,10 @@ the training sets and validation sets of commonly used MOT datasets including
 [MOT17](https://motchallenge.net/data/MOT17/), [DanceTrack](https://dancetrack.github.io/) and [SportsMOT](https://github.com/MCG-NJU/SportsMOT?tab=readme-ov-file) with language descriptions
 at both scene and instance levels.
 
+
+
 | Dataset|Videos (Scenes) |Annotated Scenes |Tracks (Instances) | Annotated Instances|Annotated Boxes |Frames|
-|---------|---------|---------|---------|---------|---------|---------|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | MOT17-L |  7 | 7 | 796 |796 | 614,103 | 110,407 |
 | DanceTrack-L| 65   | 65| 682 | 682 | 576,078 | 67,304|
 |SportsMOT-L |90| 90 | 1,280 | 1,280 |608,152|55,544 |
