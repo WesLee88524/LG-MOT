@@ -157,7 +157,7 @@ REID_ARCH='fastreid_msmt_BOT_R50_ibn'
 DATA_PATH=your_data_path
 PRETRAINED_MODEL_PATH=your_pretrained_model_path
 
-python scripts/main.py --experiment_mode test --cuda --test_splits MOT17-test-all --run_id ${RUN}_${REID_ARCH} --interpolate_motion --linear_center_only --det_file byte065 --data_path ${DATA_PATH} --reid_embeddings_dir reid_${REID_ARCH} --node_embeddings_dir node_${REID_ARCH}  --zero_nodes --reid_arch $REID_ARCH --edge_level_embed --save_cp --hicl_model_path ${PRETRAINED_MODEL_PATH}  --inst_KL_loss 0 --KL_loss 0 
+python scripts/main.py --experiment_mode test --cuda --test_splits MOT17-test-all --run_id ${RUN}_${REID_ARCH} --interpolate_motion --linear_center_only --det_file byte065 --data_path ${DATA_PATH} --reid_embeddings_dir reid_${REID_ARCH} --node_embeddings_dir node_${REID_ARCH}  --zero_nodes --reid_arch $REID_ARCH --edge_level_embed --save_cp --hicl_model_path ${PRETRAINED_MODEL_PATH}  --inst_KL_loss 1 --KL_loss 1 --mpn_use_prompt_edge 1 1 1 1 
 
 ```
 
