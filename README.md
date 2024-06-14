@@ -14,6 +14,7 @@
 [![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2406.04844.pdf)
 
 ## Latest 
+- `2024/06/14`: We released our trained models.
 - `2024/06/12`: We released our code.
 - `2024/06/11`: We released our technical report on [arxiv](https://arxiv.org/abs/2406.04844.pdf). Our code and models are coming soon!
 
@@ -58,6 +59,25 @@ at both scene and instance levels.
 <div align=center>
 <img src="source/visualization.png" width="90%"/>
 </div>
+
+## Performance on Benchmarks
+### MOT17 Challenge - Test Set
+| Dataset    |  IDF1 | HOTA | MOTA | ID Sw. | model|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|MOT17 |81.7 |65.6 |81.0 |1161 |[checkpoint.pth](https://drive.google.com/file/d/1LVFQ-i9cuilGX82dIlArXmm1TuvcxNvx/view?usp=drive_link)|
+
+
+
+### DanceTrack - Test Set
+| Dataset    |  IDF1 | HOTA | MOTA | AssA | DetA | model|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|DanceTrack | 60.5 | 61.8| 89.0| 80.0| 47.8 |[checkpoint.pth](https://drive.google.com/file/d/1yD-k-rXsqhu8c9mxjCYG41OuHYeDSpWa/view?usp=drive_link)|
+
+### SportsMOT - Test Set
+| Dataset    |  IDF1 | HOTA | MOTA | ID Sw. | model|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|SportsMOT | 77.1 |75.0 |91.0 |2847|[checkpoint.pth](https://drive.google.com/file/d/1e-xfa2yeASdWLjWKGSzrn46_hkl6L8vO/view?usp=drive_link)|
+
 
 ## Setup
 
