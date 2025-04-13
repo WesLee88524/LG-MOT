@@ -5,7 +5,7 @@
     <img src="https://i.imgur.com/waxVImv.png" alt="Oryx Video-ChatGPT">
 </p>
 
-#### [Yuhao Li](), [Muzammal Naseer](https://muzammal-naseer.com/), [Jiale Cao](https://jialecao001.github.io/), [Yu Zhu](), [Jinqiu Sun](https://teacher.nwpu.edu.cn/m/2009010133), [Yanning Zhang](https://jszy.nwpu.edu.cn/1999000059) and [Fahad Khan](https://sites.google.com/view/fahadkhans/home)
+#### [Yuhao Li](), [Jiale Cao](https://jialecao001.github.io/), [Muzammal Naseer](https://muzammal-naseer.com/), [Yu Zhu](), [Jinqiu Sun](https://teacher.nwpu.edu.cn/m/2009010133), [Yanning Zhang](https://jszy.nwpu.edu.cn/1999000059) and [Fahad Khan](https://sites.google.com/view/fahadkhans/home)
 
 
 #### **Northwestern Polytechnical University， Mohamed bin Zayed University of AI,  TianJin University,  Linköping University**
@@ -169,7 +169,7 @@ if you use our work, please consider citing us:
 ```BibTeX
 @misc{li2024multigranularity,
       title={Multi-Granularity Language-Guided Multi-Object Tracking}, 
-      author={Yuhao Li and Muzammal Naseer and Jiale Cao and Yu Zhu and Jinqiu Sun and Yanning Zhang and Fahad Shahbaz Khan},
+      author={Yuhao Li and Jiale Cao and Muzammal Naseer and Yu Zhu and Jinqiu Sun and Yanning Zhang and Fahad Shahbaz Khan},
       year={2024},
       eprint={2406.04844},
       archivePrefix={arXiv},
