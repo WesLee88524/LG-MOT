@@ -8,7 +8,7 @@
 #### [Yuhao Li](), [Jiale Cao](https://jialecao001.github.io/), [Muzammal Naseer](https://muzammal-naseer.com/), [Yu Zhu](), [Jinqiu Sun](https://teacher.nwpu.edu.cn/m/2009010133), [Yanning Zhang](https://jszy.nwpu.edu.cn/1999000059) and [Fahad Khan](https://sites.google.com/view/fahadkhans/home)
 
 
-#### **Northwestern Polytechnical University， Mohamed bin Zayed University of AI,  TianJin University,  Linköping University**
+#### **Northwestern Polytechnical University， Mohamed bin Zayed University of AI,  TianJin University, Khalifa University, Linköping University**
 
 <!-- [![Website](https://img.shields.io/badge/Project-Website-87CEEB)](site_url) -->
 [![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2406.04844.pdf)
