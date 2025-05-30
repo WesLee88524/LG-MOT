@@ -1,5 +1,5 @@
 # LG-MOT
-### **Multi-Granularity Language-Guided Multi-Object Tracking**
+### **Multi-Granularity Language-Guided Training for Multi-Object Tracking**
 
 <p align="center">
     <img src="https://i.imgur.com/waxVImv.png" alt="Oryx Video-ChatGPT">
@@ -14,6 +14,7 @@
 [![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2406.04844.pdf)
 
 ## Latest 
+- `2025/05/22`: Our work has been accepted by IEEE TCSVT.
 - `2024/06/14`: We released our trained models.
 - `2024/06/12`: We released our code.
 - `2024/06/11`: We released our technical report on [arxiv](https://arxiv.org/abs/2406.04844.pdf). Our code and models are coming soon!
@@ -167,14 +168,16 @@ python scripts/main.py --experiment_mode test --cuda --test_splits MOT17-test-al
 ## Citation
 if you use our work, please consider citing us:
 ```BibTeX
-@misc{li2024multigranularity,
-      title={Multi-Granularity Language-Guided Multi-Object Tracking}, 
-      author={Yuhao Li and Jiale Cao and Muzammal Naseer and Yu Zhu and Jinqiu Sun and Yanning Zhang and Fahad Shahbaz Khan},
-      year={2024},
-      eprint={2406.04844},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
-}
+@ARTICLE{11010839,
+  author={Li, Yuhao and Cao, Jiale and Naseer, Muzammal and Zhu, Yu and Sun, Jinqiu and Zhang, Yanning and Khan, Fahad Shahbaz},
+  journal={IEEE Transactions on Circuits and Systems for Video Technology}, 
+  title={Multi-Granularity Language-Guided Training for Multi-Object Tracking}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Visualization;Training;Feature extraction;Standards;Object detection;Accuracy;Representation learning;Current transformers;Circuits and systems;Target tracking;Multi-object tracking;Language-guided features;Cross-domain generalizability},
+  doi={10.1109/TCSVT.2025.3572810}}
 
 ```
 
