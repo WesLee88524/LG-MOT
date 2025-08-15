@@ -14,6 +14,7 @@
 [![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2406.04844.pdf)
 
 ## Latest 
+- `2025/08/15`: We released our annotated [DanceTrack-L](https://huggingface.co/datasets/UHow/DanceTrack-L), [MOT17-L](https://huggingface.co/datasets/UHow/MOT17-L), and [SportsMOT](https://huggingface.co/datasets/UHow/SportsMOT-L).
 - `2025/05/22`: Our work has been accepted by IEEE TCSVT.
 - `2024/06/14`: We released our trained models.
 - `2024/06/12`: We released our code.
