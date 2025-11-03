@@ -174,11 +174,12 @@ if you use our work, please consider citing us:
   journal={IEEE Transactions on Circuits and Systems for Video Technology}, 
   title={Multi-Granularity Language-Guided Training for Multi-Object Tracking}, 
   year={2025},
-  volume={},
-  number={},
-  pages={1-1},
-  keywords={Visualization;Training;Feature extraction;Standards;Object detection;Accuracy;Representation learning;Current transformers;Circuits and systems;Target tracking;Multi-object tracking;Language-guided features;Cross-domain generalizability},
+  volume={35},
+  number={11},
+  pages={11001-11012},
+  keywords={Visualization;Training;Feature extraction;Standards;Object detection;Accuracy;Representation learning;Current transformers;Circuits and systems;Target tracking;Multi-object tracking;language-guided features;cross-domain generalizability},
   doi={10.1109/TCSVT.2025.3572810}}
+
 
 ```
 
